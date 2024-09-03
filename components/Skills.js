@@ -82,7 +82,7 @@ const Skills = () => {
      const position = useTransform(scrollYProgress, (pos)=>{console.log(pos)})
 
   return (
-    <motion.section ref={targetref} id="skills" className='h-fit lg:min-h-[50%] w-full overflow-hidden text-yellow-300 pt-5 xl:pt-24'>
+    <motion.section ref={targetref} id="skills" className='h-fit lg:min-h-[50%] w-full overflow-hidden text-yellow-300 pt-16 xl:pt-24'>
         <motion.div style={{scale:headscale(), opacity:headopacity()}} className=''><h2 className='text-5xl pb-5 lg:text-5xl text-center font-bold lg:pb-10'>Skills</h2></motion.div>
         <div className="skillsholder w-[90%] mx-auto h-fit pb-10 flex gap-5 lg:gap-2 flex-wrap">
             <motion.div style={{scale:langscale(),x:langright, opacity:langopacity(), y: langdown}} className="lang flex w-[300px] text-yellow-200 py-1 lg:py-2 mx-auto justify-center">
