@@ -18,7 +18,7 @@ const Skills = () => {
             return useTransform(scrollYProgress, [0.05, 0.4 , 0.45, 0.52], [2.5, 1, 1 , 0.2 ])
         }
         else{
-            return useTransform(scrollYProgress, [0.08, 0.2 , 0.41, 0.43], [4.5, 1, 1 , 0.3 ])
+            return useTransform(scrollYProgress, [0.05, 0.2 , 0.41, 0.43], [4.5, 1, 1 , 0.3 ])
         }
     }
     const langscale = () => { 
@@ -76,7 +76,7 @@ const Skills = () => {
             return useTransform(scrollYProgress, [0.05, 0.4, 0.45, 0.52], [0, 1, 1, 0])
         }
         else{
-            return useTransform(scrollYProgress, [0.08, 0.2 , 0.41, 0.43], [4.5, 1, 1 , 0 ])
+            return useTransform(scrollYProgress, [0.08, 0.2 , 0.41, 0.43], [0, 1, 1 , 0 ])
         }
      }
      const position = useTransform(scrollYProgress, (pos)=>{console.log(pos)})
