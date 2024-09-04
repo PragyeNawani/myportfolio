@@ -47,7 +47,7 @@ const Contactme = () => {
                         </li>
                     </ul>
                     {profiledis === profileobj[0] && <div className="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400  rounded-lg w-full">
-                        <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-2 pb-5">Social Media</h3>
+                        <h3 className="text-4xl font-bold text-gray-900 dark:black mb-2 pb-5">Social Media</h3>
                         <div className='flex gap-3 items-center pb-2'>
                             <img src="https://cdn.pixabay.com/photo/2020/11/15/06/18/instagram-logo-5744708_640.png" className='h-[35px] w-[35px]' alt="" />
                             <a href="https://www.instagram.com/pragye_nawani/" target='__blank' className='text-blue-800 hover:text-blue-500 font-bold'>@pragye_nawani (Main)</a>
@@ -62,7 +62,7 @@ const Contactme = () => {
                         </div>
                     </div> }
                     {profiledis === profileobj[1] && <div className="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400  rounded-lg w-full">
-                        <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-2 pb-5">Work Profile</h3>
+                        <h3 className="text-4xl font-bold text-gray-900 dark:black mb-2 pb-5">Work Profile</h3>
                         <div className='flex gap-3 items-center pb-2'>
                             <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" className='h-[35px] w-[35px]' alt="" />
                             <a href="https://www.linkedin.com/in/pragye-nawani-737a1129b/" target='__blank' className='text-blue-800 hover:text-blue-500 font-bold'>Pragye Nawani (LinkedIn)</a>
@@ -73,7 +73,7 @@ const Contactme = () => {
                         </div>
                     </div> }
                     {profiledis === profileobj[2] && <div className="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400  rounded-lg w-full">
-                        <h3 className="text-4xl font-bold text-gray-900 dark:text-white mb-2 pb-5">Freelance Profile</h3>
+                        <h3 className="text-4xl font-bold text-gray-900 dark:black mb-2 pb-5">Freelance Profile</h3>
                         <div className='flex gap-3 items-center pb-2'>
                             <img src="https://cdn.worldvectorlogo.com/logos/fiverr-1.svg" className='h-[35px] w-[35px]' alt="" />
                             <a href="https://www.fiverr.com/coder_pragye?up_rollout=true" target='__blank' className='text-blue-800 hover:text-blue-500 font-bold'>@coder_pragye (fiverr)</a>
