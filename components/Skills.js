@@ -15,7 +15,7 @@ const Skills = () => {
     // const headscale = useTransform(scrollYProgress, [0.05, 0.4 , 0.45, 0.52], [2.5, 1, 1 , 0.2 ])
     const headscale = () => { 
         if(isDesktopOrLaptop){
-            return useTransform(scrollYProgress, [0.05, 0.4 , 0.45, 0.52], [2.5, 1, 1 , 0.2 ])
+            return useTransform(scrollYProgress, [0.05, 0.4 , 0.6, 0.66], [2.5, 1, 1 , 0.2 ])
         }
         else{
             return useTransform(scrollYProgress, [0.08, 0.2 , 0.41, 0.43], [3.5, 1, 1 , 0.3 ])
@@ -31,34 +31,34 @@ const Skills = () => {
      }
     const langscale = () => { 
         if(isDesktopOrLaptop){
-            return useTransform(scrollYProgress, [0.1, 0.3, 0.50, 0.65], [1.5, 1, 1, 0.2 ])
+            return useTransform(scrollYProgress, [0.1, 0.3, 0.62, 0.75], [1.5, 1, 1, 0.2 ])
         }
         else{
-            return useTransform(scrollYProgress, [0.1, 0.3, 0.43, 0.5], [1.5, 1, 1, 0.3 ])
+            return useTransform(scrollYProgress, [0.1, 0.27, 0.28, 0.41], [1.5, 1, 1, 0.3 ])
         }
      }
     const langopacity = () => { 
         if(isDesktopOrLaptop){
-            return useTransform(scrollYProgress, [0.1, 0.3, 0.50,0.60], [0, 1 ,1, 0 ])
+            return useTransform(scrollYProgress, [0.1, 0.3, 0.62,0.75], [0, 1 ,1, 0 ])
         }
         else{
-            return useTransform(scrollYProgress, [0.1, 0.3, 0.43, 0.5], [0, 1 ,1, 0 ])
+            return useTransform(scrollYProgress, [0.1, 0.27, 0.28, 0.41], [0, 1 ,1, 0 ])
         }
      }
     const frameworkscale = () => { 
         if(isDesktopOrLaptop){
-            return useTransform(scrollYProgress, [0.22, 0.42, 0.58 , 0.75], [1.5, 1, 1, 0.2 ])
+            return useTransform(scrollYProgress, [0.22, 0.42, 0.66 , 0.80], [1.5, 1, 1, 0.2 ])
         }
         else{
-            return useTransform(scrollYProgress, [0.21, 0.33, 0.5082 , 0.63], [1.5, 1, 1, 0 ])
+            return useTransform(scrollYProgress, [0.21, 0.33, 0.37 , 0.55], [1.5, 1, 1, 0 ])
         }
     }
     const frameworkopacity = ()=>{
         if(isDesktopOrLaptop){
-            return useTransform(scrollYProgress, [0.22, 0.42, 0.58, 0.75], [0, 1, 1, 0 ])
+            return useTransform(scrollYProgress, [0.22, 0.42, 0.66, 0.80], [0, 1, 1, 0 ])
         }
         else{
-            return useTransform(scrollYProgress, [0.2, 0.33, 0.5082 , 0.63], [0, 1, 1, 0 ])
+            return useTransform(scrollYProgress, [0.21, 0.33, 0.37 , 0.55], [0, 1, 1, 0 ])
         }
     }
     const featuresscale = () => { 
@@ -130,7 +130,7 @@ const Skills = () => {
     const featuresuright = useTransform(scrollYProgress, [0.35,0.55], ["400px", "0px"])
     const headopacity =  () => { 
         if(isDesktopOrLaptop){
-            return useTransform(scrollYProgress, [0.05, 0.4, 0.45, 0.52], [0, 1, 1, 0])
+            return useTransform(scrollYProgress, [0.05, 0.4, 0.6, 0.66], [0, 1, 1, 0])
         }
         else{
             return useTransform(scrollYProgress, [0.06, 0.3 , 0.41, 0.43], [0, 1, 1 , 0 ])
@@ -142,10 +142,10 @@ const Skills = () => {
     <motion.section ref={targetref} id="skills" className='h-fit lg:min-h-[50%] w-full overflow-hidden text-yellow-300 pt-5 xl:pt-24'>
         <motion.div style={{scale:headscale(), opacity:headopacity(), y:headdown()}} className=''><h2 className='text-5xl pb-5 lg:text-5xl text-center font-bold lg:pb-10'>Skills</h2></motion.div>
         <div className="skillsholder w-[90%] mx-auto h-fit pb-10 flex gap-5 lg:gap-10 flex-wrap">
-            <motion.div style={{scale:langscale(),x:langright(), opacity:langopacity(), y: langdown}} className="lang flex w-[300px] text-yellow-200 py-1 lg:py-2 mx-auto justify-center">
+            <motion.div style={{scale:langscale(),x:langright(), opacity:langopacity(), y: langdown}} className="lang flex w-[300px] text-yellow-200 py-1 lg:py-2 mx-auto justify-center items-center">
                 <h3 className='text-lg lg:text-3xl w-[250px] text-center'>Languages</h3>
             </motion.div>
-            <motion.div style={{scale:langscale(),x:languright(), opacity:langopacity(), y: langdown}} className='rightside flex flex-wrap gap-4 w-[1700px] mx-auto mt-1 lg:mt-10'>
+            <motion.div style={{scale:langscale(),x:languright(), opacity:langopacity(), y: langdown}} className='rightside flex flex-wrap gap-4 w-[1700px] mx-auto mt-1 lg:mt-2'>
                 <div className='border-2 w-fit min-h-10 rounded-xl border-yellow-800 p-2 mx-auto flex backdrop-blur-lg hover:scale-105 hover:cursor-pointer'>
                     <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" className='h-[20px] lg:h-[50px] w-[20px] lg:w-[50px] object-cover' alt="" />
                     <div className='text-center w-full flex items-center justify-center text-sm lg:text-lg px-10 text-yellow-100 '>HTML</div>
