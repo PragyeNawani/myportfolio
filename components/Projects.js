@@ -11,7 +11,7 @@ const Projects = () => {
         <div><h2 className='text-5xl lg:text-6xl font-bold text-center text-yellow-300 pb-10 '>Projects</h2></div>
         <div className="relative shadow-md sm:rounded-lg h-fit lg:h-3/4 w-full lg:w-full overflow-x-auto overflow-y-auto mx-auto">
           <table className="w-[300px] lg:w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 mx-auto">
-            <thead className="text-xl text-yellow-100 uppercase bg-gray-700 dark:bg-gray-700 dark:text-gray-400">
+            <thead className="text-xl text-yellow-100 uppercase bg-gray-700 dark:bg-gray-700 dark:text-yellow-100">
               <tr>
                 <th scope="col" className="px-3 py-3">
                   Project Name
@@ -27,7 +27,7 @@ const Projects = () => {
             <tbody>
               {projectsdata.map((value, index) => (
                 <tr className="odd:bg-gray-400 even:bg-gray-500 text-lg">
-                  <th scope="row" className="px-1 lg:px-3 py-1 lg:py-4 font-medium text-yellow-50 whitespace-nowrap dark:text-white">
+                  <th scope="row" className="px-1 lg:px-3 py-1 lg:py-4 font-medium text-yellow-50 whitespace-nowrap dark:text-yellow-50">
                     {value.projectname}
                   </th>
                   <td className="px-1 lg:px-3 py-1 lg:py-4 text-yellow-50">
