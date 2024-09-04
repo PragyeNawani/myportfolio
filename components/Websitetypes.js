@@ -34,45 +34,45 @@ const Websitetypes = () => {
         <section id="websitetypes" className='h-fit lg:min-h-[50%] w-[100%] overflow-hidden lg:pt-28'>
             <div className='w-[90%] h-fit pb-20 mx-auto'>
                 <div><h2 className='text-4xl font-bold text-yellow-300 text-center'>Types Of Website - I build and design</h2></div>
-                <div className="content pt-14 px-10 flex flex-col-reverse lg:flex-row gap-16">
-                    <div className="leftside relative overflow-x-auto shadow-md sm:rounded-lg w-[300px] lg:w-[400px] border mx-auto">
+                <div className="content pt-14 px-2 sm:px-10 flex flex-col-reverse lg:flex-row gap-16">
+                    <div className="leftside relative overflow-x-auto shadow-md sm:rounded-lg w-[260px] sm:w-[300px] lg:w-[400px] border mx-auto">
                         <table className="w-full text-lg rounded-xl">
                             <thead className="text-lg text-yellow-200 uppercase bg-transparent backdrop-blur-sm">
                                 <tr>
 
-                                    <th scope="col" className="px-6 py-3">
+                                    <th scope="col" className="px-2 sm:px-6 py-1 sm:py-3">
                                         Websites' Categories
                                     </th>
                                 </tr>
                             </thead>
                             <tbody className='list'>
-                                <tr onClick={()=>{changewebsite(0)}} className="bg-transparent backdrop-blur-sm border-b cursor-pointer hover:backdrop-blur-xl listitem webcatactive">
-                                    <th scope="row" className="px-6 py-4 font-medium text-yellow-100 whitespace-nowrap">
+                                <tr onClick={()=>{changewebsite(0)}} className="bg-transparent backdrop-blur-sm border-b border-yellow-400 cursor-pointer hover:backdrop-blur-xl listitem webcatactive">
+                                    <th scope="row" className="px-3 sm:px-6 py-2 sm:py-4 font-medium text-yellow-100 whitespace-nowrap">
                                         Fitness Website
                                     </th>
                                 </tr>
-                                <tr onClick={()=>{changewebsite(1)}} className="bg-transparent backdrop-blur-sm border-b cursor-pointer hover:backdrop-blur-xl listitem">
-                                    <th scope="row" className="px-6 py-4 font-medium text-yellow-100 whitespace-nowrap">
+                                <tr onClick={()=>{changewebsite(1)}} className="bg-transparent backdrop-blur-sm border-b border-yellow-400 cursor-pointer hover:backdrop-blur-xl listitem">
+                                    <th scope="row" className="px-3 sm:px-6 py-2 sm:py-4 font-medium text-yellow-100 whitespace-nowrap">
                                         Ecommerce Website
                                     </th>
                                 </tr>
-                                <tr onClick={()=>{changewebsite(2)}} className="bg-transparent backdrop-blur-sm border-b cursor-pointer hover:backdrop-blur-xl listitem">
-                                    <th scope="row" className="px-6 py-4 font-medium text-yellow-100 whitespace-nowrap">
+                                <tr onClick={()=>{changewebsite(2)}} className="bg-transparent backdrop-blur-sm border-b border-yellow-400 cursor-pointer hover:backdrop-blur-xl listitem">
+                                    <th scope="row" className="px-3 sm:px-6 py-2 sm:py-4 font-medium text-yellow-100 whitespace-nowrap">
                                         Portfolio Website
                                     </th>
                                 </tr>
-                                <tr onClick={()=>{changewebsite(3)}} className="bg-transparent backdrop-blur-sm border-b cursor-pointer hover:backdrop-blur-xl listitem">
-                                    <th scope="row" className="px-6 py-4 font-medium text-yellow-100 whitespace-nowrap">
+                                <tr onClick={()=>{changewebsite(3)}} className="bg-transparent backdrop-blur-sm border-b border-yellow-400 cursor-pointer hover:backdrop-blur-xl listitem">
+                                    <th scope="row" className="px-3 sm:px-6 py-2 sm:py-4 font-medium text-yellow-100 whitespace-nowrap">
                                         Agency Website
                                     </th>
                                 </tr>
-                                <tr onClick={()=>{changewebsite(4)}} className="bg-transparent backdrop-blur-sm border-b cursor-pointer hover:backdrop-blur-xl listitem">
-                                    <th scope="row" className="px-6 py-4 font-medium text-yellow-100 whitespace-nowrap">
+                                <tr onClick={()=>{changewebsite(4)}} className="bg-transparent backdrop-blur-sm border-b border-yellow-400 cursor-pointer hover:backdrop-blur-xl listitem">
+                                    <th scope="row" className="px-3 sm:px-6 py-2 sm:py-4 font-medium text-yellow-100 whitespace-nowrap">
                                         Marketing Website
                                     </th>
                                 </tr>
-                                <tr onClick={()=>{changewebsite(5)}} className="bg-transparent backdrop-blur-sm border-b cursor-pointer hover:backdrop-blur-xl listitem">
-                                    <th scope="row" className="px-6 py-4 font-medium text-yellow-100 whitespace-nowrap">
+                                <tr onClick={()=>{changewebsite(5)}} className="bg-transparent backdrop-blur-sm border-b border-yellow-400 cursor-pointer hover:backdrop-blur-xl listitem">
+                                    <th scope="row" className="px-3 sm:px-6 py-2 sm:py-4 font-medium text-yellow-100 whitespace-nowrap">
                                         Landing Pages
                                     </th>
                                 </tr>
