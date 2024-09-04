@@ -23,7 +23,7 @@ const AboutMe = () => {
             return useTransform(scrollYProgress, [0, 0.6], [1, 0.3])
         }
      }
-    let displayimgopacity =  useTransform(scrollYProgress, [0, 0.7], [1, 0])
+    let displayimgopacity =  useTransform(scrollYProgress, [0, 0.5], [1, 0])
     let displayimgleft = useTransform(scrollYProgress,[0, 0.7], ["0px", "-100%"])
     let displaycontentright = useTransform(scrollYProgress,[0, 0.7], ["0px", "100%"])
     const position = useTransform(scrollYProgress, (pos)=>{
@@ -37,7 +37,7 @@ const AboutMe = () => {
     
     return (
         <motion.section ref={targetref}  id="aboutme" className='min-h-[90vh] xl:h-[100%] w-full overflow-hidden text-yellow-300'>
-            <motion.div style={{position}} className="content w-[100%] min-h-[100%] lg:min-h-[100%] pt-28 xl:py-28 px-5 xl:px-20 flex flex-col  items-center xl:flex-row xl:justify-between">
+            <motion.div style={{position}} className="content w-[100%] min-h-[100%] lg:min-h-[100%] pt-28 xl:py-28 px-5 xl:px-20 flex flex-col  items-center xl:flex-row xl:justify-center">
                 <div className="leftside relative left-0 lg:h-[500px] lg:w-[450px] displayanimate">
                     {isDesktopOrLaptop && <motion.img style={{scale:displayimgscale(), opacity:displayimgopacity, x:displayimgleft}} src="displaypic.jpg" className='lg:h-full h-[300px] w-[300px] lg:w-full object-cover rounded-full displayimg' alt="display pic" />}
                     {!isDesktopOrLaptop && <motion.img style={{scale:displayimgscale(), opacity:displayimgopacity}} src="displaypic.jpg" className='lg:h-full h-[300px] w-[300px] lg:w-full object-cover rounded-full displayimg' alt="display pic" />}
